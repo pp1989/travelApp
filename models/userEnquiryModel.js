@@ -14,6 +14,18 @@ const userEnquiryschema = new mongoose.Schema({
   comments: {
     type: String,
   },
+  checkin: {
+    type: Date,
+    required: true,
+  },
+  checkout: {
+    type: Date,
+    required: true,
+  },
+  howManyPeopleTravel: {
+    type: Number,
+    required: true,
+  },
 
   createAt: {
     type: Date,
